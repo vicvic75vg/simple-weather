@@ -1,0 +1,24 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Backend for Simple Weather",
+  "main": "server.js",
+  "scripts": {
+    "server": "nodemon server",
+    "client": "cd .. && npm start",
+    "dev": "concurrently --kill-others-on-fail ./kill5000.sh  \"npm run server\" \"npm run client\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "victor garcia",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "node-fetch": "^2.3.0"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "cors": "^2.8.5",
+    "nodemon": "^1.18.10"
+  },
+  "proxy": "http://localhost:5000"
+}
