@@ -6,7 +6,7 @@
   "scripts": {
     "server": "nodemon server",
     "client": "cd .. && npm start",
-    "dev": "concurrently --kill-others-on-fail ./kill5000.sh  \"npm run server\" \"npm run client\"",
+    "dev": "concurrently --kill-others-on-fail \"./kill5000.sh\"  \"npm run server\" \"npm run client\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "victor garcia",
